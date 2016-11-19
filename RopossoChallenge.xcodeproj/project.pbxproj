@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1F513371DE0F30100A6BC71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F513361DE0F30100A6BC71 /* AppDelegate.swift */; };
+		D1F513391DE0F30100A6BC71 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F513381DE0F30100A6BC71 /* MasterViewController.swift */; };
+		D1F5133B1DE0F30100A6BC71 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F5133A1DE0F30100A6BC71 /* DetailViewController.swift */; };
+		D1F5133E1DE0F30100A6BC71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F5133C1DE0F30100A6BC71 /* Main.storyboard */; };
+		D1F513401DE0F30100A6BC71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F5133F1DE0F30100A6BC71 /* Assets.xcassets */; };
+		D1F513431DE0F30100A6BC71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F513411DE0F30100A6BC71 /* LaunchScreen.storyboard */; };
+		D1F5134E1DE0F30100A6BC71 /* RopossoChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F5134D1DE0F30100A6BC71 /* RopossoChallengeTests.swift */; };
+		D1F513591DE0F30100A6BC71 /* RopossoChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F513581DE0F30100A6BC71 /* RopossoChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1F5134A1DE0F30100A6BC71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1F5132B1DE0F30100A6BC71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1F513321DE0F30100A6BC71;
+			remoteInfo = RopossoChallenge;
+		};
+		D1F513551DE0F30100A6BC71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1F5132B1DE0F30100A6BC71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1F513321DE0F30100A6BC71;
+			remoteInfo = RopossoChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D1F513331DE0F30100A6BC71 /* RopossoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RopossoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F513361DE0F30100A6BC71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1F513381DE0F30100A6BC71 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		D1F5133A1DE0F30100A6BC71 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D1F5133D1DE0F30100A6BC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1F5133F1DE0F30100A6BC71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1F513421DE0F30100A6BC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1F513441DE0F30100A6BC71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1F513491DE0F30100A6BC71 /* RopossoChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RopossoChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F5134D1DE0F30100A6BC71 /* RopossoChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RopossoChallengeTests.swift; sourceTree = "<group>"; };
+		D1F5134F1DE0F30100A6BC71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1F513541DE0F30100A6BC71 /* RopossoChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RopossoChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F513581DE0F30100A6BC71 /* RopossoChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RopossoChallengeUITests.swift; sourceTree = "<group>"; };
+		D1F5135A1DE0F30100A6BC71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1F513301DE0F30100A6BC71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F513461DE0F30100A6BC71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F513511DE0F30100A6BC71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1F5132A1DE0F30100A6BC71 = {
+			isa = PBXGroup;
+			children = (
+				D1F513351DE0F30100A6BC71 /* RopossoChallenge */,
+				D1F5134C1DE0F30100A6BC71 /* RopossoChallengeTests */,
+				D1F513571DE0F30100A6BC71 /* RopossoChallengeUITests */,
+				D1F513341DE0F30100A6BC71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1F513341DE0F30100A6BC71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1F513331DE0F30100A6BC71 /* RopossoChallenge.app */,
+				D1F513491DE0F30100A6BC71 /* RopossoChallengeTests.xctest */,
+				D1F513541DE0F30100A6BC71 /* RopossoChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1F513351DE0F30100A6BC71 /* RopossoChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				D1F513361DE0F30100A6BC71 /* AppDelegate.swift */,
+				D1F513381DE0F30100A6BC71 /* MasterViewController.swift */,
+				D1F5133A1DE0F30100A6BC71 /* DetailViewController.swift */,
+				D1F5133C1DE0F30100A6BC71 /* Main.storyboard */,
+				D1F5133F1DE0F30100A6BC71 /* Assets.xcassets */,
+				D1F513411DE0F30100A6BC71 /* LaunchScreen.storyboard */,
+				D1F513441DE0F30100A6BC71 /* Info.plist */,
+			);
+			path = RopossoChallenge;
+			sourceTree = "<group>";
+		};
+		D1F5134C1DE0F30100A6BC71 /* RopossoChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1F5134D1DE0F30100A6BC71 /* RopossoChallengeTests.swift */,
+				D1F5134F1DE0F30100A6BC71 /* Info.plist */,
+			);
+			path = RopossoChallengeTests;
+			sourceTree = "<group>";
+		};
+		D1F513571DE0F30100A6BC71 /* RopossoChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1F513581DE0F30100A6BC71 /* RopossoChallengeUITests.swift */,
+				D1F5135A1DE0F30100A6BC71 /* Info.plist */,
+			);
+			path = RopossoChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1F513321DE0F30100A6BC71 /* RopossoChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1F5135D1DE0F30100A6BC71 /* Build configuration list for PBXNativeTarget "RopossoChallenge" */;
+			buildPhases = (
+				D1F5132F1DE0F30100A6BC71 /* Sources */,
+				D1F513301DE0F30100A6BC71 /* Frameworks */,
+				D1F513311DE0F30100A6BC71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RopossoChallenge;
+			productName = RopossoChallenge;
+			productReference = D1F513331DE0F30100A6BC71 /* RopossoChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1F513481DE0F30100A6BC71 /* RopossoChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1F513601DE0F30100A6BC71 /* Build configuration list for PBXNativeTarget "RopossoChallengeTests" */;
+			buildPhases = (
+				D1F513451DE0F30100A6BC71 /* Sources */,
+				D1F513461DE0F30100A6BC71 /* Frameworks */,
+				D1F513471DE0F30100A6BC71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1F5134B1DE0F30100A6BC71 /* PBXTargetDependency */,
+			);
+			name = RopossoChallengeTests;
+			productName = RopossoChallengeTests;
+			productReference = D1F513491DE0F30100A6BC71 /* RopossoChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D1F513531DE0F30100A6BC71 /* RopossoChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1F513631DE0F30100A6BC71 /* Build configuration list for PBXNativeTarget "RopossoChallengeUITests" */;
+			buildPhases = (
+				D1F513501DE0F30100A6BC71 /* Sources */,
+				D1F513511DE0F30100A6BC71 /* Frameworks */,
+				D1F513521DE0F30100A6BC71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1F513561DE0F30100A6BC71 /* PBXTargetDependency */,
+			);
+			name = RopossoChallengeUITests;
+			productName = RopossoChallengeUITests;
+			productReference = D1F513541DE0F30100A6BC71 /* RopossoChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1F5132B1DE0F30100A6BC71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Abhinav Mathur";
+				TargetAttributes = {
+					D1F513321DE0F30100A6BC71 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					D1F513481DE0F30100A6BC71 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D1F513321DE0F30100A6BC71;
+					};
+					D1F513531DE0F30100A6BC71 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D1F513321DE0F30100A6BC71;
+					};
+				};
+			};
+			buildConfigurationList = D1F5132E1DE0F30100A6BC71 /* Build configuration list for PBXProject "RopossoChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1F5132A1DE0F30100A6BC71;
+			productRefGroup = D1F513341DE0F30100A6BC71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1F513321DE0F30100A6BC71 /* RopossoChallenge */,
+				D1F513481DE0F30100A6BC71 /* RopossoChallengeTests */,
+				D1F513531DE0F30100A6BC71 /* RopossoChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1F513311DE0F30100A6BC71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F513431DE0F30100A6BC71 /* LaunchScreen.storyboard in Resources */,
+				D1F513401DE0F30100A6BC71 /* Assets.xcassets in Resources */,
+				D1F5133E1DE0F30100A6BC71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F513471DE0F30100A6BC71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F513521DE0F30100A6BC71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1F5132F1DE0F30100A6BC71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F5133B1DE0F30100A6BC71 /* DetailViewController.swift in Sources */,
+				D1F513391DE0F30100A6BC71 /* MasterViewController.swift in Sources */,
+				D1F513371DE0F30100A6BC71 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F513451DE0F30100A6BC71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F5134E1DE0F30100A6BC71 /* RopossoChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F513501DE0F30100A6BC71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F513591DE0F30100A6BC71 /* RopossoChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1F5134B1DE0F30100A6BC71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1F513321DE0F30100A6BC71 /* RopossoChallenge */;
+			targetProxy = D1F5134A1DE0F30100A6BC71 /* PBXContainerItemProxy */;
+		};
+		D1F513561DE0F30100A6BC71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1F513321DE0F30100A6BC71 /* RopossoChallenge */;
+			targetProxy = D1F513551DE0F30100A6BC71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D1F5133C1DE0F30100A6BC71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1F5133D1DE0F30100A6BC71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1F513411DE0F30100A6BC71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1F513421DE0F30100A6BC71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1F5135B1DE0F30100A6BC71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1F5135C1DE0F30100A6BC71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1F5135E1DE0F30100A6BC71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RopossoChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = crickabhi.RopossoChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D1F5135F1DE0F30100A6BC71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RopossoChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = crickabhi.RopossoChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D1F513611DE0F30100A6BC71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RopossoChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = crickabhi.RopossoChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RopossoChallenge.app/RopossoChallenge";
+			};
+			name = Debug;
+		};
+		D1F513621DE0F30100A6BC71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RopossoChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = crickabhi.RopossoChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RopossoChallenge.app/RopossoChallenge";
+			};
+			name = Release;
+		};
+		D1F513641DE0F30100A6BC71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RopossoChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = crickabhi.RopossoChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RopossoChallenge;
+			};
+			name = Debug;
+		};
+		D1F513651DE0F30100A6BC71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RopossoChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = crickabhi.RopossoChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RopossoChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1F5132E1DE0F30100A6BC71 /* Build configuration list for PBXProject "RopossoChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F5135B1DE0F30100A6BC71 /* Debug */,
+				D1F5135C1DE0F30100A6BC71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1F5135D1DE0F30100A6BC71 /* Build configuration list for PBXNativeTarget "RopossoChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F5135E1DE0F30100A6BC71 /* Debug */,
+				D1F5135F1DE0F30100A6BC71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D1F513601DE0F30100A6BC71 /* Build configuration list for PBXNativeTarget "RopossoChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F513611DE0F30100A6BC71 /* Debug */,
+				D1F513621DE0F30100A6BC71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D1F513631DE0F30100A6BC71 /* Build configuration list for PBXNativeTarget "RopossoChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F513641DE0F30100A6BC71 /* Debug */,
+				D1F513651DE0F30100A6BC71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1F5132B1DE0F30100A6BC71 /* Project object */;
+}
