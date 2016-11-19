@@ -22,10 +22,10 @@ class StoryCard: UITableViewCell {
         
         let gap : CGFloat = 10
         let labelHeight: CGFloat = 30
-        let labelWidth: CGFloat = UIScreen.main.bounds.width - 10
+        let labelWidth: CGFloat = UIScreen.main.bounds.width - 20
         let lineGap : CGFloat = 5
         let label2Y : CGFloat = gap + labelHeight + lineGap
-        let imageSize : CGFloat = 200
+        let imageSize : CGFloat = 190
         
         storyTitle = UILabel()
         storyTitle.frame = CGRect(x: gap, y: gap, width: labelWidth, height: labelHeight)

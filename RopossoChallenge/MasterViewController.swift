@@ -68,11 +68,12 @@ class MasterViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
-                let object = storyObjects[indexPath.row] as! NSDate
+                let object = storyObjects[indexPath.row + 2]
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 controller.detailItem = object
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
-                controller.navigationItem.leftItemsSupplementBackButton = true
+                controller.userObjects = userObjects
+                //controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
+                //controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
     }
@@ -111,6 +112,10 @@ class MasterViewController: UITableViewController {
         return true
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "showDetail",sender: indexPath)
+
+    }
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             storyObjects.remove(at: indexPath.row)
