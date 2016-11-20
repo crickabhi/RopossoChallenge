@@ -16,10 +16,11 @@ class DetailViewController: UIViewController {
     var userImage       : UIImageView!
     var storyTitle      : UILabel!
     var storyImage      : UIImageView!
-    var followButton    : UIImageView!
+    var followButton    : UIButton!
 
     var userNameString     : String?
     var userImageUrlString : String?
+    var followStatus       : Bool?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,14 +28,31 @@ class DetailViewController: UIViewController {
         let gap : CGFloat = 10
         let labelHeight: CGFloat = 80
         let labelWidth: CGFloat = UIScreen.main.bounds.width - 30
-        let lineGap : CGFloat = 5
-        let imageSize : CGFloat = UIScreen.main.bounds.height - 200
+        let imageSize : CGFloat = UIScreen.main.bounds.height - 210
+        
         for i in 0  ..< userObjects.count
         {
             if self.detailItem?.value(forKey: "db")! as! String == userObjects[i].value(forKey: "id")! as! String
             {
-               userNameString = userObjects[i].value(forKey: "username")! as? String
-               userImageUrlString = userObjects[i].value(forKey: "image")! as? String
+                userNameString = userObjects[i].value(forKey: "username")! as? String
+                userImageUrlString = userObjects[i].value(forKey: "image")! as? String
+                let userDefaultsInfo = UserDefaults.standard
+
+                if userDefaultsInfo.value(forKey: "followedGroups") != nil
+                {
+                    if (userDefaultsInfo.value(forKey: "followedGroups") as! Array<String>).contains(self.detailItem?.value(forKey: "db")! as! String)
+                    {
+                      followStatus = true
+                    }
+                    else
+                    {
+                        followStatus = false
+                    }
+                }
+                else
+                {
+                    followStatus = userObjects[i].value(forKey: "is_following")! as? Bool
+                }
             }
             
         }
@@ -56,6 +74,17 @@ class DetailViewController: UIViewController {
         
         view.addSubview(userName)
 
+        if followStatus == false
+        {
+            followButton = UIButton()
+            followButton.frame = CGRect(x:(UIScreen.main.bounds.width/2 - 50),y: UIScreen.main.bounds.height - 45, width: 100,height: 44)
+            followButton.setTitle("Follow", for: .normal)
+            followButton.backgroundColor = UIColor.blue
+            view.addSubview(followButton)
+            followButton.addTarget(self, action: #selector(DetailViewController.buttonAction(_:)), for: UIControlEvents.touchUpInside)
+
+        }
+
         storyTitle = UILabel()
         storyTitle.frame = CGRect(x: gap, y: 100, width: labelWidth, height: labelHeight)
         storyTitle.textColor = UIColor.black
@@ -74,6 +103,30 @@ class DetailViewController: UIViewController {
 
     }
 
+    func buttonAction(_ sender: UIButton) {
+        
+        let userDefaultsInfo = UserDefaults.standard
+        if userDefaultsInfo.value(forKey: "followedGroups") != nil
+        {
+            var followedGroups = userDefaultsInfo.value(forKey: "followedGroups") as! Array<String>
+            if followedGroups.contains(self.detailItem?.value(forKey: "db")! as! String)
+            {
+                
+            }
+            else
+            {
+                followedGroups.append(self.detailItem?.value(forKey: "db")! as! String)
+                userDefaultsInfo.removeObject(forKey: "followedGroups")
+                userDefaultsInfo.set(followedGroups, forKey: "followedGroups")
+            }
+        }
+        else
+        {
+            userDefaultsInfo.set([self.detailItem?.value(forKey: "db")! as! String], forKey: "followedGroups")
+        }
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
