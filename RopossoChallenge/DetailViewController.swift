@@ -27,8 +27,9 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let gap : CGFloat = 10
         let labelHeight: CGFloat = 80
-        let labelWidth: CGFloat = UIScreen.main.bounds.width - 30
-        let imageSize : CGFloat = UIScreen.main.bounds.height - 210
+        let labelWidth: CGFloat = UIScreen.main.bounds.width - 20
+        let imageSize : CGFloat = UIScreen.main.bounds.height - 180
+        //view.backgroundColor = UIColor.brown
         
         for i in 0  ..< userObjects.count
         {
@@ -69,26 +70,30 @@ class DetailViewController: UIViewController {
         userName = UILabel()
         userName.frame = CGRect(x: 75 , y: 40, width: labelWidth, height: labelHeight)
         userName.textColor = UIColor.black
-        userName.font = UIFont(name: "HelveticaNeue", size: 14)
+        userName.font = UIFont(name: "HelveticaNeue", size: 16)
         userName.text = userNameString!
         
         view.addSubview(userName)
 
         if followStatus == false
         {
-            followButton = UIButton()
-            followButton.frame = CGRect(x:(UIScreen.main.bounds.width/2 - 50),y: UIScreen.main.bounds.height - 45, width: 100,height: 44)
-            followButton.setTitle("Follow", for: .normal)
-            followButton.backgroundColor = UIColor.blue
-            view.addSubview(followButton)
-            followButton.addTarget(self, action: #selector(DetailViewController.buttonAction(_:)), for: UIControlEvents.touchUpInside)
-
+            setupFollowButton()
+        }
+        else
+        {
+            setupFollowingButton()
         }
 
         storyTitle = UILabel()
         storyTitle.frame = CGRect(x: gap, y: 100, width: labelWidth, height: labelHeight)
         storyTitle.textColor = UIColor.black
-        storyTitle.font = UIFont(name: "HelveticaNeue", size: 16)
+        storyTitle.numberOfLines = 3
+        storyTitle.lineBreakMode = NSLineBreakMode.byWordWrapping
+        if #available(iOS 8.2, *) {
+            storyTitle.font = UIFont.systemFont(ofSize: 14, weight: UIFontWeightSemibold)
+        } else {
+            storyTitle.font = UIFont(name: "HelveticaNeue", size: 14)
+        }
         storyTitle.text = self.detailItem?.value(forKey: "title") as? String
         storyTitle.numberOfLines = 0
 
@@ -100,11 +105,38 @@ class DetailViewController: UIViewController {
 
         storyImage.contentMode = .scaleToFill
         view.addSubview(storyImage)
-
     }
 
+    func setupFollowButton()
+    {
+        followButton = UIButton()
+        followButton.frame = CGRect(x:80,y: userName.frame.height + 12, width: 75,height: 30)
+        followButton.setTitle("Follow", for: .normal)
+        followButton.setTitleColor(UIColor.white, for: .normal)
+        followButton.isHidden = false
+        followButton.backgroundColor = UIColor.gray
+        followButton.layer.masksToBounds = true
+        followButton.layer.cornerRadius = 5
+        view.addSubview(followButton)
+        followButton.addTarget(self, action: #selector(DetailViewController.buttonAction(_:)), for: UIControlEvents.touchUpInside)
+    }
+    
+    func setupFollowingButton()
+    {
+        followButton = UIButton()
+        followButton.frame = CGRect(x:80,y: userName.frame.height + 12, width: 100,height: 30)
+        followButton.setTitle("Following", for: .normal)
+        followButton.setTitleColor(UIColor.white, for: .normal)
+        followButton.isHidden = false
+        followButton.backgroundColor = UIColor.gray
+        followButton.layer.masksToBounds = true
+        followButton.layer.cornerRadius = 5
+        view.addSubview(followButton)
+    }
+    
     func buttonAction(_ sender: UIButton) {
         
+        followButton.setTitleColor(UIColor.blue, for: .normal)
         let userDefaultsInfo = UserDefaults.standard
         if userDefaultsInfo.value(forKey: "followedGroups") != nil
         {
@@ -124,7 +156,8 @@ class DetailViewController: UIViewController {
         {
             userDefaultsInfo.set([self.detailItem?.value(forKey: "db")! as! String], forKey: "followedGroups")
         }
-
+        setupFollowingButton()
+        
     }
     
     override func didReceiveMemoryWarning() {

@@ -153,8 +153,8 @@
 		D1F513351DE0F30100A6BC71 /* RopossoChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				D1F513361DE0F30100A6BC71 /* AppDelegate.swift */,
 				D1F5136C1DE0FFE800A6BC71 /* SDWebImage */,
+				D1F513361DE0F30100A6BC71 /* AppDelegate.swift */,
 				D1F513381DE0F30100A6BC71 /* MasterViewController.swift */,
 				D1F513661DE0F42100A6BC71 /* StoryCard.swift */,
 				D1F5133A1DE0F30100A6BC71 /* DetailViewController.swift */,
@@ -636,6 +636,7 @@
 				D1F5135F1DE0F30100A6BC71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1F513601DE0F30100A6BC71 /* Build configuration list for PBXNativeTarget "RopossoChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -644,6 +645,7 @@
 				D1F513621DE0F30100A6BC71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1F513631DE0F30100A6BC71 /* Build configuration list for PBXNativeTarget "RopossoChallengeUITests" */ = {
 			isa = XCConfigurationList;
@@ -652,6 +654,7 @@
 				D1F513651DE0F30100A6BC71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

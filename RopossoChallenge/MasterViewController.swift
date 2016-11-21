@@ -17,13 +17,7 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        /*
-        self.navigationItem.leftBarButtonItem = self.editButtonItem
 
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
-        self.navigationItem.rightBarButtonItem = addButton
-        */
-        
         if let path = Bundle.main.path(forResource: "iOS_Data", ofType: "json")
         {
             if let jsonData = NSData(contentsOfFile: path)//(contentsOfFile: path, options: .DataReadingMappedIfSafe, error: nil)
@@ -56,13 +50,7 @@ class MasterViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-/*
-    func insertNewObject(_ sender: Any) {
-        objects.insert(NSDate(), at: 0)
-        let indexPath = IndexPath(row: 0, section: 0)
-        self.tableView.insertRows(at: [indexPath], with: .automatic)
-    }
-*/
+    
     // MARK: - Segues
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -89,13 +77,7 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        /*
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
-        return cell
-        */
         let cell = StoryCard(style: UITableViewCellStyle.default, reuseIdentifier: "myIdentifier")
         cell.storyTitle.text = storyObjects[indexPath.row + 2].value(forKey: "title") as? String
         cell.storyImage.sd_setImage(with: NSURL(string:(storyObjects[indexPath.row + 2].value(forKey: "si") as? String)!)! as URL)
